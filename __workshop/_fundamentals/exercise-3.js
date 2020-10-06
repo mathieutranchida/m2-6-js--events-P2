@@ -19,10 +19,23 @@ const people = [
 
 function fullName(peopleArr) {
   // return something
+  let nameArray = peopleArr.map((person) => {
+    if (typeof person.name.middle === "string") {
+      return `${person.name.first} ${person.name.middle} ${person.name.last}`;
+    } else {
+      return `${person.name.first} ${person.name.last}`;
+    }
+  });
+  return nameArray;
 }
 
 // 2. Do a console.log to verify your function.
-
+console.log(
+  peopleArr({
+    name: { first: "Alyssa", middle: "P.", last: "Hacker" },
+    age: 26,
+  })
+);
 // 3. Run the test to validate: yarn test exercise-3
 
 module.exports = { fullName, people };

@@ -19,10 +19,11 @@ const people = [
 
 function olderPeople(peopleArr, age) {
   // return something
+  return peopleArr.filter((key) => key.age > age);
 }
 
 // 2. Do a console.log to verify your function.
-
+console.log(olderPeople(people, 22));
 // 3. Run the test to validate: yarn test exercise-4
 
 module.exports = { olderPeople, people };

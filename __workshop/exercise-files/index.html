@@ -5,10 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Jost:400,700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Signup Form</title>
   </head>
   <body>
+    <div class="wrapper">
+      <h1>Signup Form</h1>
+      <form id="form">
+        <div class="textForm">
+          <label for="FullNameInputId" class="textLabelForm">Full name</label>
+          <input
+            class="textInputForm"
+            id="FullNameInputId"
+            type="text"
+            required
+          />
+        </div>
+        <div class="textForm">
+          <label for="streetAddressInputId" class="textLabelForm"
+            >Street address</label
+          >
+          <input
+            class="textInputForm"
+            id="streetAddressInputId"
+            type="text"
+            required
+          />
+        </div>
+        <div class="textForm">
+          <label for="emailInputId" class="textLabelForm">Email address</label>
+          <input
+            class="textInputForm"
+            id="emailInputId"
+            type="email"
+            required
+          />
+        </div>
+        <div class="textForm">
+          <label for="phoneInputId" class="textLabelForm">Phone number</label>
+          <input class="textInputForm" id="phoneInputId" type="tel" required />
+        </div>
+        <div class="textForm">
+          <label for="passwordInputId" class="textLabelForm">Password</label>
+          <input
+            class="textInputForm"
+            id="passwordInputId"
+            type="password"
+            required
+          />
+        </div>
+        <div class="textForm">
+          <label for="confirmPasswordInputId" class="textLabelForm"
+            >Confirm password</label
+          >
+          <input
+            class="textInputForm"
+            id="confirmPasswordInputId"
+            type="password"
+            required
+          />
+        </div>
+        <div class="terms">
+          <input id="termsInputId" type="checkbox" />
+          <label for="termsInputId"
+            >I agree to the <a href="#">terms of services</a>.</label
+          >
+        </div>
+        <div id="errorBoxId"></div>
+        <footer>
+          <button type="reset" id="clearButtonId">Clear</button>
+          <button type="submit" id="submitButtonId">Submit</button>
+        </footer>
+      </form>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

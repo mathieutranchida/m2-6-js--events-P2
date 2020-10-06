@@ -1,1 +1,97 @@
 /* add css here */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Jost";
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  background-color: rgb(228, 228, 228);
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  background-color: white;
+  margin: 25px;
+  padding: 15px;
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 2px rgb(192, 189, 189);
+}
+
+h1 {
+  font-size: 30pt;
+  font-weight: 900;
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.textLabelForm {
+  margin-right: 8px;
+}
+
+.textInputForm {
+  border: solid rgb(167, 167, 167) 1px;
+  border-radius: 5px;
+  width: 220px;
+}
+
+.textForm {
+  padding: 3px;
+  text-align: right;
+}
+
+.terms {
+  background-color: rgb(228, 228, 228);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 34px 0px 17px 0px;
+}
+
+#termsInputId {
+  margin-right: 8px;
+}
+
+#errorBoxId {
+  text-align: center;
+  background-color: rgb(207, 132, 132);
+  border-radius: 10px;
+  padding: 15px;
+  font-weight: 600;
+  margin: 17px 0px;
+  display: none;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#clearButtonId {
+  background-color: rgb(163, 45, 104);
+}
+
+#submitButtonId {
+  background-color: rgb(83, 70, 172);
+}
+
+button {
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 15px 45px;
+  margin: 17px 0px 0px 0px;
+}

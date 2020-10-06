@@ -21,10 +21,21 @@ const people = [
 
 function avgAge(peopleArr) {
   // return something
+  let sum = 0;
+  peopleArr.forEach((people) => {
+    let age = people.age;
+    sum += age;
+  });
+  return Math.round(sum / peopleArr.length);
 }
 
 // 2. Do a console.log to verify your function.
-
+console.log([
+  { name: { first: "Alyssa", middle: "P.", last: "Hacker" }, age: 6 },
+  { name: { first: "Ben", last: "Bitdiddle" }, age: 14 },
+  { name: { first: "Eva", middle: "Lu", last: "Ator" }, age: 20 },
+  { name: { first: "Lem", middle: "E.", last: "Tweakit" }, age: 25 },
+]);
 // 3. Run the test to validate: yarn test exercise-2
 
 module.exports = { avgAge, people };
